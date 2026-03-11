@@ -4,14 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "serve -s dist -l $PORT"
-  },
+  "dev": "vite",
+  "build": "node node_modules/vite/bin/vite.js build",
+  "start": "node server.js"
+},
   "dependencies": {
     "@vitejs/plugin-react": "^4.2.0",
     "axios": "^1.6.0",
+    "express": "^5.2.1",
     "formik": "^2.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
